@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2d2d2d;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.contato a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contato img {
+    width: 75px;
+    vertical-align: middle;
+    margin-bottom: -14px;
+    margin-top: -9px;
+}
+
+.logo img {
+    width: 110px;
+    margin-bottom: -14px;
+    margin-top: -9px;
+    margin-left: -50px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.linha-inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.formulario input, .formulario button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+#nome, #servidor {
+    flex: 1; /* Expande os campos para preencher o espaço */
+    width: 100%;
+}
+
+.formulario button {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #0055aa;
+}
+
+.planilha {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.linha-cabecalho, .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #b8b4b4;
+}
+
+.status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-right: 15px;
+    display: inline-block; /* Para aparecer ao lado */
+}
+
+.acao .deletar {
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .linha-inputs {
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .container h1{
+        font-size: 18px;
+        margin-left: -1px;
+    }
+    .linha-cabecalho div {
+        font-size: 10px;
+    }
+    #listaClientes{
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+/* Tamanho padrão */
+.acao .deletar {
+    font-size: 18px; /* Tamanho padrão da lixeira */
+}
+
+/* Bolinha colorida padrão */
+.status {
+    width: 12px; /* Largura padrão */
+    height: 12px; /* Altura padrão */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .acao .deletar {
+        font-size: 16px; /* Tamanho da lixeira em telas menores */
+    }
+
+    .status {
+        width: 10px; /* Largura para telas menores */
+        height: 10px; /* Altura para telas menores */
+    }
+
+    .container {
+
+        text-align: center;
+        width: 90%;
+        max-width: 950px;
+    }
+
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 400px) {
+    .acao .deletar {
+        font-size: 10px; /* Tamanho da lixeira em telas muito pequenas */
+    }
+
+    .status {
+        width: 7px; /* Largura para telas muito pequenas */
+        height: 7px; /* Altura para telas muito pequenas */
+    }
+}
+
+/* Estilos para a notificação visual */
+.notificacao-visual {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    display: none; /* Inicialmente escondido */
+}
+
+.notificacao-logo {
+    width: 30px; /* Tamanho da logo na notificação */
+    margin-right: 10px;
+}
+
+#notificacaoMensagem {
+    display: inline-block; /* Para que a mensagem apareça ao lado da logo */
+}
