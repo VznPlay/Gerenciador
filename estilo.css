@@ -138,7 +138,6 @@ header {
 
 
 
-
 }
 
 /* Tamanho padrão */
@@ -150,38 +149,6 @@ header {
 .status {
     width: 12px; /* Largura padrão */
     height: 12px; /* Altura padrão */
-}
-
-/* Media query para telas menores */
-@media (max-width: 600px) {
-    .acao .deletar {
-        font-size: 16px; /* Tamanho da lixeira em telas menores */
-    }
-
-    .status {
-        width: 10px; /* Largura para telas menores */
-        height: 10px; /* Altura para telas menores */
-    }
-
-    .container {
-
-        text-align: center;
-        width: 90%;
-        max-width: 950px;
-    }
-
-}
-
-/* Media query para telas muito pequenas */
-@media (max-width: 400px) {
-    .acao .deletar {
-        font-size: 10px; /* Tamanho da lixeira em telas muito pequenas */
-    }
-
-    .status {
-        width: 7px; /* Largura para telas muito pequenas */
-        height: 7px; /* Altura para telas muito pequenas */
-    }
 }
 
 /* Estilos para a notificação visual */
@@ -205,4 +172,123 @@ header {
 
 #notificacaoMensagem {
     display: inline-block; /* Para que a mensagem apareça ao lado da logo */
+}
+
+
+
+/* CODIGO ABAIXO E DOS OUTROS SITES*/
+.catalogo {
+    display: flex;
+    gap: 7px;
+}
+
+.sug{
+    margin-right: 8px;
+}
+
+.section {
+    background-color:rgb(42, 99, 45); /* Azul forte */
+    padding: 5px;
+    display: flex;
+    border: 2px solid #333; /* Borda para destaque */
+    color: #fff; /* Cor do texto para contraste */
+    border-radius: 7px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+}
+#pac-man, #macs{
+margin-left: 25px;
+margin-right: 25px;
+}
+a{
+    cursor: pointer;
+}
+
+/* CODIGO ACIMA E DOS AQUADRADOS DE OUTROS APPS*/
+
+
+
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .acao .deletar {
+        font-size: 16px; /* Tamanho da lixeira em telas menores */
+    }
+
+    .status {
+        width: 10px; /* Largura para telas menores */
+        height: 10px; /* Altura para telas menores */
+    }
+
+    .container {
+
+        text-align: center;
+        width: 90%;
+        max-width: 950px;
+    }
+
+
+
+
+
+    .catalogo {
+        display: flex;
+        gap: 1px;
+    }
+    
+    #sug{
+    margin-left: -1px;
+    margin-right: 0px;
+    }
+    
+    .section {
+        background-color:rgb(42, 99, 45); /* Azul forte */
+        padding: 3px;
+        display: flex;
+        border: 1px solid #333; /* Borda para destaque */
+        color: #fff; /* Cor do texto para contraste */
+        border-radius: 7px;
+    }
+    
+    .section a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 10px;
+    }
+    
+    .icon {
+        width: 25px;
+        height: 25px;
+    
+    }
+    #pac-man, #macs{
+    margin-left: 15px;
+    }
+    
+    
+
+
+
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 400px) {
+    .acao .deletar {
+        font-size: 10px; /* Tamanho da lixeira em telas muito pequenas */
+    }
+
+    .status {
+        width: 7px; /* Largura para telas muito pequenas */
+        height: 7px; /* Altura para telas muito pequenas */
+    }
 }
