@@ -3,103 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo-VznPlay</title>
+    <title> Anuidade - Grupo VznPlay</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
 
-        <!-- Código do Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0PK25VBC6"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-W0PK25VBC6');
-        </script>
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0a1a63;">
+<link rel="apple-touch-icon" href="/logo-01.png">
 
 
+    <!-- Bibliotecas para exportação -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
+    <!-- Código do Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0PK25VBC6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W0PK25VBC6');
+    </script>
 </head>
 <body>
 
 <div class="container">
+    <div class="catalogo">
 
-        <div class="catalogo">
-            <div class="section" id="sug">
-                <a href="https://facilitaplay.vercel.app" target="_blank">
-                    <img src="facilitador.png" alt="Ícone Sugestão" class="icon">
-                    FACILITADOR
-                </a>
-            </div>
-            <div class="section">
-                <a href="https://planilhadefaturamneto.vercel.app" target="_blank">
-                    <img src="fatura.png" alt="Ícone Facilitador" class="icon">
-                    Faturamento
-                </a>
-            </div>
-            <div class="section">
-                <a href="https://macs-clientes.vercel.app" target="_blank">
-                    <img id="macs" src="org_macs_apps.png" alt="Ícone Organização" class="icon"> <br>
-                    Org. Macs
-                </a>
-            </div>
-            <div class="section">
-                <a href="https://t.me/antipapatesteiptvbot" target="_blank">
-                    <img id="pac-man" src="papa_teste.png" alt="Ícone Papa Teste" class="icon"> <br>
-                    Papa teste
-                </a>
-            </div>
+        <div class="section" id="sug">
+            <a href="https://facilitaplay.vercel.app" target="_blank">
+                <img src="facilitador.png" alt="Ícone Sugestão" class="icon">
+                FACILITADOR
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://planilhadefaturamneto.vercel.app" target="_blank">
+                <img src="faturamento.png" alt="Ícone Facilitador" class="icon">
+                Faturamento
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://macs-clientes.vercel.app" target="_blank">
+                <img id="macs" src="macs.png" alt="Ícone Organização" class="icon"> <br>
+                Org. Macs
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://t.me/antipapatesteiptvbot" target="_blank">
+                <img id="pac-man" src="imposto.png" alt="Ícone Papa Teste" class="icon"> <br>
+                Simulador
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://sistema-sorteio.vercel.app" target="_blank">
+                <img id="arruma" src="bonus.png" alt="Ícone Gerenciador" class="icon">
+                Indicação
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://sistema-sorteio.vercel.app" target="_blank">
+                <img id="afast" src="sorteio.png" alt="Ícone Gerenciador" class="icon">
+                Sorteio
+            </a>
+        </div>
 
-            <div class="section">
-                <a href="https://sistema-sorteio.vercel.app" target="_blank">
-                    <img src="sorteio.png" alt="Ícone Gerenciador" class="icon">
-                    Sorteio
-                </a>
+    </div><br>
+
+    <!-- Faixa de texto rolante -->
+    <div class="banner">
+        <div class="marquee">
+            <div class="marquee-container">
+                <span class="marquee-text">🚀 Automatize Suas Vendas Com O WA Sender Clique Em <a href="https://wasenderplus.vercel.app" target="_blank">SAIBA MAIS!</a></span> <span class="marquee-text">🚀 Multiplique Seus Ganhos E Transforme Seu WhatsApp Em Uma Máquina De Vendas! <a href="https://wasenderplus.vercel.app" target="_blank">CLIQUE AQUI</a></span>
+                <!-- Duplicamos os textos para criar o loop perfeito -->
+                <span class="marquee-text">🚀 Automatize Suas Vendas Com O WA Sender Clique Em <a href="https://wasenderplus.vercel.app" target="_blank">SAIBA MAIS!</a></span> <span class="marquee-text">🚀 Multiplique Seus Ganhos E Transforme Seu WhatsApp Em Uma Máquina De Vendas! <a href="https://wasenderplus.vercel.app" target="_blank">CLIQUE AQUI</a></span>
             </div>
         </div>
-        <br>
+    </div>
 
-        <header>
-            <h1>Gerenciador - VznPlay</h1>
-            <div class="contato">
-                <a href="https://t.me/bannerfuteboll" target="_blank"> 
-                    <img src="telegram.png" alt="Telegram">
-                </a>
-            </div>
-            <div class="logo">
-                <a href="https://wa.me/98985730784" target="_blank">
-                <img src="Logo-princ.png" alt="Logo">
-                </a>
-            </div>
-        </header>
-        
-        <section class="formulario">
-            <div class="linha-inputs">
-                <input type="text" id="nome" placeholder="Nome do Cliente" maxlength="20">
-                <input type="text" id="servidor" placeholder="Nome do Aplicativo"maxlength="12">
-            </div>
-            <input type="date" id="dataVencimento">
-            <button onclick="adicionarCliente()">Adicionar Dados</button>
-            <input type="text" id="pesquisa" placeholder="Pesquisar Cliente" onkeyup="pesquisarCliente()">
-        </section>
 
-        <section class="planilha">
-            <div class="linha-cabecalho">
-                <div>Status</div>
-                <div>Nome</div>
-                <div>Vencimento</div>
-                <div>Apps</div>
-                <div>Deletar</div>
+    <header>
+        <h1>Gerenciador - VznPlay</h1>
+        <div class="contato">
+            <a href="https://t.me/bannerfuteboll" target="_blank"> 
+                <img src="telegram.png" alt="Telegram">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="https://wa.me/98985730784" target="_blank">
+            <img src="Logo-princ.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    
+    <section class="formulario">
+        <div class="linha-inputs">
+            <input type="text" id="nome" placeholder="Nome do Cliente" maxlength="20">
+            <input type="text" id="servidor" placeholder="Nome do Aplicativo"maxlength="12">
+        </div>
+        <input type="date" id="dataVencimento">
+        <button onclick="adicionarCliente()">Adicionar Dados</button>
+        <input type="text" id="pesquisa" placeholder="Pesquisar Cliente" onkeyup="pesquisarCliente()">
+    </section>
+
+    <!-- Botões de Exportar/Importar -->
+    <div class="export-import-buttons">
+        <div class="export-btn-container">
+            <button id="exportButton" class="export-btn" onclick="showExportModal()">Exportar Dados</button>
+            <div id="exportNotification" class="export-notification" style="display: none;">!</div>
+        </div>
+        <button class="import-btn" onclick="document.getElementById('fileInput').click()">Importar Dados</button>
+        <input type="file" id="fileInput" class="file-input" accept=".xlsx,.xls" onchange="importarDados(event)">
+    </div>
+
+    <!-- Modal de Exportação -->
+    <div id="exportModal" class="export-modal">
+        <div class="export-modal-content">
+            <h3>Exportar Dados</h3>
+            <p>Selecione o formato para exportação:</p>
+            
+            <input type="text" id="exportName" class="export-modal-input" placeholder="Digite seu nome para incluir no PDF">
+            
+            <div class="export-modal-note">
+                <strong>Importante:</strong> Para um backup seguro, recomenda-se o download em formato Excel, pois ele permite a importação dos dados caso seja necessário restaurá-los futuramente. Já o formato PDF é ideal para visualização e impressão.
             </div>
-            <div id="listaClientes"></div>
-        </section>
+            
+            <div class="export-modal-buttons">
+                <button class="export-modal-btn export-pdf-btn" onclick="exportarParaPDF()">Salvar em PDF</button>
+                <button class="export-modal-btn export-excel-btn" onclick="exportarParaExcel()">Salvar em Excel</button>
+                <button class="export-modal-btn export-both-btn" onclick="exportarAmbos()">Salvar Ambos</button>
+                <button class="export-modal-btn export-cancel-btn" onclick="hideExportModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="planilha">
+        <div class="linha-cabecalho">
+            <div>Status</div>
+            <div>Nome</div>
+            <div>Vencimento</div>
+            <div>Apps</div>
+            <div>Deletar</div>
+        </div>
+        <div id="listaClientes"></div>
+    </section>
 </div>
 
 <div id="notificacaoVisual" style="display:none; position:fixed; top:10px; right:10px; padding:10px; border-radius:5px;">
-        <span id="notificacaoMensagem"></span>
+    <span id="notificacaoMensagem"></span>
 </div>
 
 <script src="script.js"></script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
+  }
+</script>
+
+
 </body>
 </html>
-
