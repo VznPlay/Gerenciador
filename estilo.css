@@ -332,11 +332,12 @@ a{
     margin-right: 10px;
 }
 #pac-man{
-    width: 55px;
-    height: 50px;
-    margin-left: 13px;
-    margin-right: 13px;
-    margin-bottom: -3px;
+    width: 53px;
+    height: 49px;
+    margin-top: -2px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 2px;
 }
 #macs{
     margin-left: 10px;
@@ -401,11 +402,12 @@ a{
     margin-right: 10px;
     }
     #pac-man{
-    width: 30px;
-    height: 30px;
-    margin-left: 13px;
-    margin-right: 13px;
-    margin-bottom: -3px;
+    width: 29px;
+    height: 29px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -0px;
+    margin-bottom: 1px;
     }
     #macs{
         width: 30px;
