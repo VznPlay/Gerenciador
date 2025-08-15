@@ -209,7 +209,7 @@ function exportarParaPDF() {
     doc.setFontSize(8);
     doc.text(footerText, 14, doc.internal.pageSize.height - 10);
     
-    doc.save(`clientes_${exportName}.pdf`);
+    doc.save(`Anuidade_Clientes.pdf`);
     
     hasUnsavedChanges = false;
     localStorage.setItem('hasUnsavedChanges', 'false');
@@ -222,7 +222,7 @@ function exportarParaExcel() {
     const wb = XLSX.utils.book_new();
     const ws = XLSX.utils.json_to_sheet(clientes);
     XLSX.utils.book_append_sheet(wb, ws, "Clientes");
-    XLSX.writeFile(wb, 'clientes_vznplay.xlsx');
+    XLSX.writeFile(wb, 'Anuidade_Clientes.xlsx');
     
     hasUnsavedChanges = false;
     localStorage.setItem('hasUnsavedChanges', 'false');
